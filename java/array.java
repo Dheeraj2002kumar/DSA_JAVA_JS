@@ -100,6 +100,15 @@ public static int findSecondMax(int[] arr){
     }
   }
 
+  // Resize an array
+  public int[] resize(int[] arr, int capacity){
+    int[] temp = new int[capacity];
+    for(int i=0; i<arr.length; i++){
+      temp[i] = arr[i];
+    }
+    return temp;
+  }
+
 
   public static void main(String[] args) {
     // array arrUtil = new array();
@@ -129,9 +138,15 @@ public static int findSecondMax(int[] arr){
     // System.out.println("Second Max: " + secMax);  // 33  
 
   //Q5. Given an array of integers, write a function to move all 0's to end of it while maintaining the relative order of the non-zero elements.
-    array arrUtil = new array();
-    arrUtil.arrayDemo();
+    // array arrUtil = new array();
+    // arrUtil.arrayDemo();
 
+    // Q6. Resize an array
+    array arrUtil = new array();
+    int[] original = new int[] {5, 1, 2, 9, 10};
+    System.out.println("The size of original array --> " + original.length);
+    original = arrUtil.resize(original, 10);
+    System.out.println("The size of original array after resize --> " + original.length);
 
   }
 }
