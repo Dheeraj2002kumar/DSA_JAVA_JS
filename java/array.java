@@ -109,6 +109,16 @@ public static int findSecondMax(int[] arr){
     return temp;
   }
 
+  // Given an array of n-1 distinct numbers in the range of 1 to n. Find the  missing number in it
+  public int findMissing(int[] arr){
+    int n = arr.length + 1;
+    int sum = (n * (n + 1)) / 2;
+    for(int num : arr){
+      sum -= num;
+    }
+    return sum;
+  }
+
 
   public static void main(String[] args) {
     // array arrUtil = new array();
@@ -142,11 +152,18 @@ public static int findSecondMax(int[] arr){
     // arrUtil.arrayDemo();
 
     // Q6. Resize an array
-    array arrUtil = new array();
-    int[] original = new int[] {5, 1, 2, 9, 10};
-    System.out.println("The size of original array --> " + original.length);
-    original = arrUtil.resize(original, 10);
-    System.out.println("The size of original array after resize --> " + original.length);
+    // array arrUtil = new array();
+    // int[] original = new int[] {5, 1, 2, 9, 10};
+    // System.out.println("The size of original array --> " + original.length);
+    // original = arrUtil.resize(original, 10);
+    // System.out.println("The size of original array after resize --> " + original.length);
+
+    // Q7. Given an array of n-1 distinct numbers in the range of 1 to n.Find the  missing number in it
+    // array arrUtil = new array();
+    // int[] arr = {1, 3, 6, 8, 2, 4, 7};
+    // System.out.println("Missing number is --> " + arrUtil.findMissing(arr));  // 5
+
+
 
   }
 }
