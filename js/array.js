@@ -102,3 +102,23 @@ function findSecondMax(arr){
 // console.log(findSecondMax(array)); // 33
 
 //------------------------------------------------------------
+
+//Q5. Given an array of integers, write a function to move all 0's to end of it while maintaining the relative order of the non-zero elements.
+function moveZero(arr, n){
+  var j = 0;  // focus on zeroth element
+  for(var i=0; i<n; i++){
+    if(arr[i] !=0 && arr[i] == 0){
+      var temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
+    }
+    if(arr[j] != 0){
+      j++;
+    }
+  }
+}
+
+var array = [8, 1,0, 2, 1, 0, 3];
+console.log(array);
+moveZero(array, array.length);
+console.log(array);
