@@ -62,4 +62,43 @@ function reverse(numbers, start, end){
 // reverse(string, 0, string.length-1);
 // console.log(string);
 
-//
+
+//--------------------------------------------------
+
+//Q3. Find Minimum value in Array
+function findMin(arr){
+  var min = arr[0];
+  for(var i=1; i<arr.length; i++){
+    if(arr[i] < min){
+      min = arr[i];
+    }
+  }
+  return min;
+}
+
+// var arr = [5, 9, 3, 15, 1, 2];
+// console.log(findMin(arr)); // 1
+
+//----------------------------------------------
+
+//Q4. Given an array of integers, return second maximum value. The secondd maximum value exists.
+function findSecondMax(arr){
+  var max = Number.MIN_SAFE_INTEGER;
+  var secondMax = Number.MIN_SAFE_INTEGER;
+  for(var i=0; i<arr.length; i++){
+    if(arr[i] > max){
+      secondMax = max;
+      max = arr[i];
+    }
+    else if(arr[i] > secondMax && arr[i] != max){
+      secondMax = arr[i];
+    }
+  }
+  return secondMax;
+}
+
+// var array = [13, 34, 2, 34, 33, 1];
+// console.log(array);
+// console.log(findSecondMax(array)); // 33
+
+//------------------------------------------------------------
