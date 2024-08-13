@@ -40,6 +40,45 @@ public static void reverseArray(int numbers[], int start, int end){
   }
 }
 
+//Q3. Find Minimum value in Array
+public static int findMinimum(int[] arr){
+  // edge
+  if(arr == null || arr.length == 0){
+    throw new IllegalArgumentException("Invalid input");
+  }
+
+  int min = arr[0];  // min will hold the minimum of array
+  for(int i=1; i<arr.length; i++){
+    if(arr[i] < min){
+      min = arr[i];
+    }
+  }
+  return min;
+}
+
+
+//Q4. Given an array of integers, return second maximum value. The secondd maximum value exists.
+public static int findSecondMax(int[] arr){ 
+  // edge
+  if(arr == null || arr.length < 2){
+    throw new IllegalArgumentException("Invalid input");
+    }
+
+    int max = Integer.MIN_VALUE;
+    int secondMax = Integer.MIN_VALUE;
+    for(int i=0; i<arr.length; i++){
+      if(arr[i] > max){
+        secondMax = max;
+        max = arr[i];
+        }
+        else if(arr[i] > secondMax && arr[i] != max){
+          secondMax = arr[i];
+          }
+    }
+    return secondMax;
+  }
+
+
   public static void main(String[] args) {
     // array arrUtil = new array();
     // arrUtil.printArray(new int[] {5, 1, 2, 9, 10});
@@ -51,10 +90,23 @@ public static void reverseArray(int numbers[], int start, int end){
     // printArray(odd);
 
     // Q2. reverse the array or string
-    int[] arr = {2, 11, 5, 10, 7, 8};
-    printArray(arr);
-    reverseArray(arr, 0, arr.length-1);
-    printArray(arr);
+    // int[] arr = {2, 11, 5, 10, 7, 8};
+    // printArray(arr);
+    // reverseArray(arr, 0, arr.length-1);
+    // printArray(arr);
+
+    //Q3. Find Minimum value in Array
+    // int[] arr = {5, 9, 3, 15, 1, 2};
+    // System.out.println(findMinimum(arr)); // 1
+
+
+    //Q4. Given an array of integers, return second maximum value. 
+    int[] array = {13, 34, 2, 34, 33, 1};
+    printArray(array);
+    int secMax = findSecondMax(array);
+    System.out.println("Second Max: " + secMax);  // 33  
+
+
   }
 }
 
