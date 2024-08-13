@@ -134,7 +134,24 @@ function resize(arr, capacity){
   return temp;
 }
 
-var original = [5, 1, 2, 9, 10];
-console.log("The size of original array --> " + original.length);
-var resized = resize(original, 10);
-console.log("The size of resized array --> " + resized.length);
+// var original = [5, 1, 2, 9, 10];
+// console.log("The size of original array --> " + original.length);
+// var resized = resize(original, 10);
+// console.log("The size of resized array --> " + resized.length);
+
+//-----------------------------------------------------------------------
+
+// Given an array of n-1 distinct numbers in the range of 1 to n. Find the  missing number in it
+function findMissingNumber(arr){
+  var n = arr.length + 1;
+  var sum = Math.floor((n*(n+1))/2);
+  
+  var actualSum = 0;
+  for(var i=0; i<arr.length; i++){
+    actualSum += arr[i];
+    }
+    return sum - actualSum;
+}
+
+var array = [1, 3, 6, 8, 2, 4, 7];
+console.log(findMissingNumber(array)); // Output: 5
