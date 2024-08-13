@@ -78,6 +78,28 @@ public static int findSecondMax(int[] arr){
     return secondMax;
   }
 
+  public void arrayDemo(){
+    int[] arr = {8, 1, 0, 2, 1, 0, 3};
+    printArray(arr);
+    moveZeros(arr, arr.length);
+    printArray(arr);
+  }
+
+  //Q5. Given an array of integers, write a function to move all 0's to end of it while maintaining the relative order of the non-zero elements.
+  public void moveZeros(int[] arr, int n){
+    int j = 0;  // focus on zeroth element
+    for(int i = 0; i<n; i++){   // i will focus non zero elements
+      if(arr[i] != 0 && arr[j] == 0){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+      }
+      if(arr[j] != 0){
+        j++;
+      }
+    }
+  }
+
 
   public static void main(String[] args) {
     // array arrUtil = new array();
@@ -101,10 +123,14 @@ public static int findSecondMax(int[] arr){
 
 
     //Q4. Given an array of integers, return second maximum value. 
-    int[] array = {13, 34, 2, 34, 33, 1};
-    printArray(array);
-    int secMax = findSecondMax(array);
-    System.out.println("Second Max: " + secMax);  // 33  
+    // int[] array = {13, 34, 2, 34, 33, 1};
+    // printArray(array);
+    // int secMax = findSecondMax(array);
+    // System.out.println("Second Max: " + secMax);  // 33  
+
+  //Q5. Given an array of integers, write a function to move all 0's to end of it while maintaining the relative order of the non-zero elements.
+    array arrUtil = new array();
+    arrUtil.arrayDemo();
 
 
   }
