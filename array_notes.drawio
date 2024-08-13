@@ -1,170 +1,284 @@
 <mxfile host="65bd71144e">
     <diagram id="5hLkSUDmJKDKyA7zmBh3" name="Page-1">
-        <mxGraphModel dx="1519" dy="679" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="2204" dy="704" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Q. Given an array of integers, return an array with even integers removed.&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font size=&quot;3&quot;&gt;Example -&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font size=&quot;3&quot;&gt;Input: arr = {3, 2, 4, 7, 10, 6, 5}&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font size=&quot;3&quot;&gt;Output: arr = {3, 7, 5}&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                <mxCell id="2" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Q. Given an array of integers, return an array with even integers removed.&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font size=&quot;3&quot;&gt;Example -&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font size=&quot;3&quot;&gt;Input: arr = {3, 2, 4, 7, 10, 6, 5}&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font size=&quot;3&quot;&gt;Output: arr = {3, 7, 5}&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="30" y="40" width="750" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="&lt;div style=&quot;color: rgb(201, 209, 217); background-color: rgb(13, 17, 23); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;[] &lt;span style=&quot;color: #d2a8ff;&quot;&gt;removeEven&lt;/span&gt;(&lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;[] &lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;){&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;oddCount&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #79c0ff;&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;for&lt;/span&gt;(&lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;i&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #79c0ff;&quot;&gt;0&lt;/span&gt;; i&lt;span style=&quot;color: #ec8e2c;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;.&lt;span style=&quot;color: #79c0ff;&quot;&gt;length&lt;/span&gt;; i&lt;span style=&quot;color: #ec8e2c;&quot;&gt;++&lt;/span&gt;){&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;if&lt;/span&gt;(&lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;[i]&lt;span style=&quot;color: #ec8e2c;&quot;&gt;%&lt;/span&gt;&lt;span style=&quot;color: #79c0ff;&quot;&gt;2&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;!=&lt;/span&gt; &lt;span style=&quot;color: #79c0ff;&quot;&gt;0&lt;/span&gt;){&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; oddCount&lt;span style=&quot;color: #ec8e2c;&quot;&gt;++&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;&lt;br&gt;&lt;div&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt;[] &lt;/span&gt;result&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;[oddCount];&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;idx&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #79c0ff;&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;for&lt;/span&gt;(&lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;i&lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #79c0ff;&quot;&gt;0&lt;/span&gt;; i&lt;span style=&quot;color: #ec8e2c;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;.&lt;span style=&quot;color: #79c0ff;&quot;&gt;length&lt;/span&gt;; i&lt;span style=&quot;color: #ec8e2c;&quot;&gt;++&lt;/span&gt;){&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;if&lt;/span&gt;(&lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;[i]&lt;span style=&quot;color: #ec8e2c;&quot;&gt;%&lt;/span&gt;&lt;span style=&quot;color: #79c0ff;&quot;&gt;2&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;!=&lt;/span&gt; &lt;span style=&quot;color: #79c0ff;&quot;&gt;0&lt;/span&gt;){&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; result[idx] &lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;[i];&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; idx&lt;span style=&quot;color: #ec8e2c;&quot;&gt;++&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;return&lt;/span&gt; result;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="3" value="&lt;div style=&quot;color: rgb(201, 209, 217); background-color: rgb(13, 17, 23); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;[] &lt;span style=&quot;color: #d2a8ff;&quot;&gt;removeEven&lt;/span&gt;(&lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;[] &lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;){&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;oddCount&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #79c0ff;&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;for&lt;/span&gt;(&lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;i&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #79c0ff;&quot;&gt;0&lt;/span&gt;; i&lt;span style=&quot;color: #ec8e2c;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;.&lt;span style=&quot;color: #79c0ff;&quot;&gt;length&lt;/span&gt;; i&lt;span style=&quot;color: #ec8e2c;&quot;&gt;++&lt;/span&gt;){&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;if&lt;/span&gt;(&lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;[i]&lt;span style=&quot;color: #ec8e2c;&quot;&gt;%&lt;/span&gt;&lt;span style=&quot;color: #79c0ff;&quot;&gt;2&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;!=&lt;/span&gt; &lt;span style=&quot;color: #79c0ff;&quot;&gt;0&lt;/span&gt;){&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; oddCount&lt;span style=&quot;color: #ec8e2c;&quot;&gt;++&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;&lt;br&gt;&lt;div&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt;[] &lt;/span&gt;result&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;[oddCount];&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;idx&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #79c0ff;&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;for&lt;/span&gt;(&lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;i&lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #79c0ff;&quot;&gt;0&lt;/span&gt;; i&lt;span style=&quot;color: #ec8e2c;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;.&lt;span style=&quot;color: #79c0ff;&quot;&gt;length&lt;/span&gt;; i&lt;span style=&quot;color: #ec8e2c;&quot;&gt;++&lt;/span&gt;){&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;if&lt;/span&gt;(&lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;[i]&lt;span style=&quot;color: #ec8e2c;&quot;&gt;%&lt;/span&gt;&lt;span style=&quot;color: #79c0ff;&quot;&gt;2&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;!=&lt;/span&gt; &lt;span style=&quot;color: #79c0ff;&quot;&gt;0&lt;/span&gt;){&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; result[idx] &lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;[i];&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; idx&lt;span style=&quot;color: #ec8e2c;&quot;&gt;++&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;return&lt;/span&gt; result;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="520" y="140" width="280" height="350" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;arr[]&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;arr[]&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="30" y="160" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="3" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="5" value="3" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="110" y="160" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="2" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="6" value="2" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="160" y="160" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="4" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="7" value="4" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="200" y="160" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="7" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="8" value="7" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="250" y="160" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="10" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="9" value="10" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="300" y="160" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="6" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="10" value="6" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="350" y="160" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="5" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="11" value="5" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="400" y="160" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="12" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="115" y="200" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="13" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="170" y="200" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="14" value="2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="210" y="200" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="15" value="3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="260" y="200" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="16" value="4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="310" y="200" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" value="5" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="17" value="5" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="360" y="200" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="6" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="18" value="6" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="410" y="200" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" value="3" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="20" value="3" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="110" y="260" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" value="7" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="21" value="7" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="160" y="260" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="22" value="5" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="22" value="5" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="200" y="260" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="23" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="23" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="115" y="300" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="24" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="24" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="170" y="300" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="25" value="2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="25" value="2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="210" y="300" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;arr[]&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="26" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;arr[]&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="30" y="265" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="27" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Q2. Given an array or string, the task is to reverse the&amp;nbsp; array or string.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Example-&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Given array of integers - {2, 11, 5, 10, 7, 8}&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Solution -&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;return reverse of array - {8, 7, 10, 5, 11, 2}&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="10" y="530" width="750" height="120" as="geometry"/>
+                <mxCell id="27" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Q2. Given an array or string, the task is to reverse the&amp;nbsp; array or string&lt;/b&gt;.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Example-&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Given array of integers - {2, 11, 5, 10, 7, 8}&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Solution -&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;return reverse of array - {8, 7, 10, 5, 11, 2}&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="530" width="750" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="28" value="&lt;div style=&quot;color: rgb(201, 209, 217); background-color: rgb(13, 17, 23); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #d2a8ff;&quot;&gt;reverseArray&lt;/span&gt;(&lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;numbers&lt;/span&gt;[], &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;start&lt;/span&gt;, &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;end&lt;/span&gt;){&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;while&lt;/span&gt;(&lt;span style=&quot;color: #fdac54;&quot;&gt;start&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;end&lt;/span&gt;){&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;temp&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;numbers&lt;/span&gt;[&lt;span style=&quot;color: #fdac54;&quot;&gt;start&lt;/span&gt;];&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #fdac54;&quot;&gt;numbers&lt;/span&gt;[&lt;span style=&quot;color: #fdac54;&quot;&gt;start&lt;/span&gt;] &lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;numbers&lt;/span&gt;[&lt;span style=&quot;color: #fdac54;&quot;&gt;end&lt;/span&gt;];&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #fdac54;&quot;&gt;numbers&lt;/span&gt;[&lt;span style=&quot;color: #fdac54;&quot;&gt;end&lt;/span&gt;] &lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; temp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #fdac54;&quot;&gt;start&lt;/span&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;++&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #fdac54;&quot;&gt;end&lt;/span&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;--&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="28" value="&lt;div style=&quot;color: rgb(201, 209, 217); background-color: rgb(13, 17, 23); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #d2a8ff;&quot;&gt;reverseArray&lt;/span&gt;(&lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;numbers&lt;/span&gt;[], &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;start&lt;/span&gt;, &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;end&lt;/span&gt;){&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;while&lt;/span&gt;(&lt;span style=&quot;color: #fdac54;&quot;&gt;start&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;end&lt;/span&gt;){&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;temp&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;numbers&lt;/span&gt;[&lt;span style=&quot;color: #fdac54;&quot;&gt;start&lt;/span&gt;];&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #fdac54;&quot;&gt;numbers&lt;/span&gt;[&lt;span style=&quot;color: #fdac54;&quot;&gt;start&lt;/span&gt;] &lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;numbers&lt;/span&gt;[&lt;span style=&quot;color: #fdac54;&quot;&gt;end&lt;/span&gt;];&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #fdac54;&quot;&gt;numbers&lt;/span&gt;[&lt;span style=&quot;color: #fdac54;&quot;&gt;end&lt;/span&gt;] &lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; temp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #fdac54;&quot;&gt;start&lt;/span&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;++&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #fdac54;&quot;&gt;end&lt;/span&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;--&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="460" y="680" width="390" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="29" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;numbers[]&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="29" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;numbers[]&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="35" y="680" width="70" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="30" value="2" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="30" value="2" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="125" y="680" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="31" value="11" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="31" value="11" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="175" y="680" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="32" value="5" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="32" value="5" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="215" y="680" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="33" value="10" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="33" value="10" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="265" y="680" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" value="7" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="34" value="7" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="315" y="680" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="35" value="8" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="35" value="8" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="365" y="680" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="37" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="37" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="130" y="720" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="38" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="185" y="720" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="39" value="2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="39" value="2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="225" y="720" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="40" value="3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="40" value="3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="275" y="720" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="41" value="4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="41" value="4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="325" y="720" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="42" value="5" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="42" value="5" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="375" y="720" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="44" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;reverseArray[]&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="44" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;reverseArray[]&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="-20" y="770" width="115" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="45" value="8" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="45" value="8" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="115" y="770" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="46" value="7" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="46" value="7" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="165" y="770" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="47" value="10" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="47" value="10" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="205" y="770" width="55" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="48" value="5" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="48" value="5" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="255" y="770" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="49" value="11" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="49" value="11" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="305" y="770" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="50" value="2" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="50" value="2" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="355" y="770" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="51" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="51" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="120" y="810" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="52" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="52" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="175" y="810" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="53" value="2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="53" value="2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="215" y="810" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="54" value="3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="54" value="3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="265" y="810" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="55" value="4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="55" value="4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="315" y="810" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="56" value="5" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="56" value="5" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="365" y="810" width="30" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="57" value="reverseArray(numbers, 0, numbers.length-1)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="57" value="reverseArray(numbers, 0, numbers.length-1)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="10" y="1020" width="380" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="58" value="temp = 2&lt;br&gt;start = 0&lt;br&gt;end = 5" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="58" value="temp = 2&lt;br&gt;start = 0&lt;br&gt;end = 5" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="15" y="870" width="90" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Q3. Find Minimum value in Array&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="15" y="1110" width="300" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;arr[]&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="1220" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="5" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="1220" width="50" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="9" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="1220" width="50" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="3" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="1220" width="50" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="15" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="1220" width="50" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="1220" width="50" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="2" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="1220" width="50" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="115" y="1260" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="165" y="1260" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="1260" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="1260" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="1260" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="5" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="1260" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="" style="edgeStyle=none;html=1;fontSize=18;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="80" target="68">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="i" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="1160" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="i = 1&lt;br&gt;min = 5&lt;br&gt;arr.length = 6" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="1320" width="130" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="&lt;div style=&quot;color: rgb(201, 209, 217); background-color: rgb(13, 17, 23); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(139, 148, 158);&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;//Q3. Find Minimum value in Array&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;static&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #d2a8ff;&quot;&gt;findMinimum&lt;/span&gt;(&lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;[] &lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;){&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: #8b949e;&quot;&gt;// edge&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;if&lt;/span&gt;(&lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;==&lt;/span&gt; &lt;span style=&quot;color: #79c0ff;&quot;&gt;null&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;||&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;.&lt;span style=&quot;color: #79c0ff;&quot;&gt;length&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;==&lt;/span&gt; &lt;span style=&quot;color: #79c0ff;&quot;&gt;0&lt;/span&gt;){&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;throw&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;color: #d2a8ff;&quot;&gt;IllegalArgumentException&lt;/span&gt;(&lt;span style=&quot;color: #a5d6ff;&quot;&gt;&quot;Invalid input&quot;&lt;/span&gt;);&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; }&lt;/font&gt;&lt;/div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;min&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;[&lt;span style=&quot;color: #79c0ff;&quot;&gt;0&lt;/span&gt;]; &amp;nbsp;&lt;span style=&quot;color: #8b949e;&quot;&gt;// min will hold the minimum of array&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;for&lt;/span&gt;(&lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;i&lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #79c0ff;&quot;&gt;1&lt;/span&gt;; i&lt;span style=&quot;color: #ec8e2c;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;.&lt;span style=&quot;color: #79c0ff;&quot;&gt;length&lt;/span&gt;; i&lt;span style=&quot;color: #ec8e2c;&quot;&gt;++&lt;/span&gt;){&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;if&lt;/span&gt;(&lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;[i] &lt;span style=&quot;color: #ec8e2c;&quot;&gt;&amp;lt;&lt;/span&gt; min){&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; min &lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;[i];&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; }&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; }&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;return&lt;/span&gt; min;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;}&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="1325" width="530" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Find Second Maximum value in an Array&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="1730" width="480" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="Q4. Given an array of integers, return second maximum value.&amp;nbsp;&lt;br&gt;The secondd maximum value exists.&lt;br&gt;&lt;br&gt;Input: arr = {12, 34, 2, 34, 33, 1}&lt;br&gt;Output: 33" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="1770" width="690" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;arr[]&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="2015" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="13" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="2010" width="50" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="34" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="2010" width="50" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="2" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="2010" width="50" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="34" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="2010" width="50" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="33" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="2010" width="50" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="2010" width="50" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="115" y="2050" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="165" y="2050" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="2050" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="2050" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="2050" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="5" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="2050" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="" style="edgeStyle=none;html=1;fontSize=18;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="103" target="90">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" value="i" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="1950" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="secondMax = integer.MIN_VALUE&lt;br&gt;max = integer.MIN_VALUE&lt;br&gt;findSecondMax(arr);&amp;nbsp;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="2210" width="390" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="integer.MIN_VALUE = 2147483648" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="2120" width="400" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="&lt;div style=&quot;color: rgb(201, 209, 217); background-color: rgb(13, 17, 23); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(139, 148, 158);&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;//Q4. Given an array of integers, return second maximum value. The secondd maximum value exists.&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;static&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #d2a8ff;&quot;&gt;findSecondMax&lt;/span&gt;(&lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;[] &lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;){ &lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: #8b949e;&quot;&gt;// edge&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;if&lt;/span&gt;(&lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;==&lt;/span&gt; &lt;span style=&quot;color: #79c0ff;&quot;&gt;null&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;||&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;.&lt;span style=&quot;color: #79c0ff;&quot;&gt;length&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&quot;color: #79c0ff;&quot;&gt;2&lt;/span&gt;){&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;throw&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;color: #d2a8ff;&quot;&gt;IllegalArgumentException&lt;/span&gt;(&lt;span style=&quot;color: #a5d6ff;&quot;&gt;&quot;Invalid input&quot;&lt;/span&gt;);&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; }&lt;/font&gt;&lt;/div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;max&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;Integer&lt;/span&gt;.&lt;span style=&quot;color: #79c0ff;&quot;&gt;MIN_VALUE&lt;/span&gt;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;secondMax&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;Integer&lt;/span&gt;.&lt;span style=&quot;color: #79c0ff;&quot;&gt;MIN_VALUE&lt;/span&gt;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;for&lt;/span&gt;(&lt;span style=&quot;color: #ec8e2c;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt; &lt;/span&gt;i&lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #79c0ff;&quot;&gt;0&lt;/span&gt;; i&lt;span style=&quot;color: #ec8e2c;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;.&lt;span style=&quot;color: #79c0ff;&quot;&gt;length&lt;/span&gt;; i&lt;span style=&quot;color: #ec8e2c;&quot;&gt;++&lt;/span&gt;){&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;if&lt;/span&gt;(&lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;[i] &lt;span style=&quot;color: #ec8e2c;&quot;&gt;&amp;gt;&lt;/span&gt; max){&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; secondMax &lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; max;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; max &lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;[i];&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;else&lt;/span&gt; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;if&lt;/span&gt;(&lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;[i] &lt;span style=&quot;color: #ec8e2c;&quot;&gt;&amp;gt;&lt;/span&gt; secondMax &lt;span style=&quot;color: #ec8e2c;&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;[i] &lt;span style=&quot;color: #ec8e2c;&quot;&gt;!=&lt;/span&gt; max){&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; secondMax &lt;span style=&quot;color: #ec8e2c;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #fdac54;&quot;&gt;arr&lt;/span&gt;[i];&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; }&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #ec8e2c;&quot;&gt;return&lt;/span&gt; secondMax;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; }&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="1830" width="970" height="440" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
