@@ -118,7 +118,23 @@ function moveZero(arr, n){
   }
 }
 
-var array = [8, 1,0, 2, 1, 0, 3];
-console.log(array);
-moveZero(array, array.length);
-console.log(array);
+// var array = [8, 1,0, 2, 1, 0, 3];
+// console.log(array);
+// moveZero(array, array.length);
+// console.log(array);
+
+//-------------------------------------------------------------------
+
+// Q6. Resize an array
+function resize(arr, capacity){
+  var temp = new Array(capacity);
+  for(var i=0; i<arr.length; i++){
+    temp[i] = arr[i];
+  }
+  return temp;
+}
+
+var original = [5, 1, 2, 9, 10];
+console.log("The size of original array --> " + original.length);
+var resized = resize(original, 10);
+console.log("The size of resized array --> " + resized.length);
