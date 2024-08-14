@@ -153,5 +153,5 @@ function findMissingNumber(arr){
     return sum - actualSum;
 }
 
-var array = [1, 3, 6, 8, 2, 4, 7];
-console.log(findMissingNumber(array)); // Output: 5
+// var array = [1, 3, 6, 8, 2, 4, 7];
+// console.log(findMissingNumber(array)); // Output: 5
