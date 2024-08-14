@@ -36,9 +36,37 @@ function add2_timing(n){
   return n * (n + 1) /2;
 }
 
-var time1 = performance.now();
-add1_timing(10000000000);
-var time2 = performance.now();
-console.log(`Time Elapsed: ${(time2 - time1) / 1000} seconds.`);
+// var time1 = performance.now();
+// add1_timing(10000000000);
+// var time2 = performance.now();
+// console.log(`Time Elapsed: ${(time2 - time1) / 1000} seconds.`);
+
+
+function countUpAndDown(n){
+  console.log("Going up!");
+  for(let i = 0; i <= n; i++){
+    console.log(i);
+  }
+
+  console.log("At the top! \n Going down...");
+  for(let j = n-1; j >= 0; j--){
+    console.log(j);
+  }
+  console.log("Back down. Bye!");
+}
+
+// countUpAndDown(10);
+
+
+function printAllPairs(n){
+  for(var i = 0; i < n; i++){
+  
+    for (var j = 0; j < n; j++){
+      console.log(i, j);
+    }
+  
+  }
+}
+// printAllPairs(3);
 
 
