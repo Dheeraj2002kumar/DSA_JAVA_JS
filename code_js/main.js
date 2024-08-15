@@ -136,3 +136,53 @@ let instructor = {
 let names = ["Dheeraj", "Niraj", "Saurabh"];
 
 let values = [true, {}, [], 2, "awesome"];
+
+// Array.concat()
+var array1 = ['a', 'b', 'c'];
+var array2 = ['d', 'e', 'f'];
+
+// console.log(array1.concat(array2)); // output: [ 'a', 'b', 'c', 'd', 'e', 'f' ]
+
+
+// Array.slice()
+// The slice() method of Array instances returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+// console.log(animals.slice(2));
+// // Expected output: Array ["camel", "duck", "elephant"]
+
+// console.log(animals.slice(2, 4));
+// // Expected output: Array ["camel", "duck"]
+
+// console.log(animals.slice(1, 5));
+// // Expected output: Array ["bison", "camel", "duck", "elephant"]
+
+// console.log(animals.slice(-2));
+// // Expected output: Array ["duck", "elephant"]
+
+// console.log(animals.slice(2, -1));
+// // Expected output: Array ["camel", "duck"]
+
+
+// console.log(animals.slice());
+// Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
+// ---------------------------------------------------------------
+
+//The splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+
+// To create a new array with a segment removed and/or replaced without mutating the original array, use toSpliced(). To access part of an array without modifying it, see slice().
+
+// Array.splice()
+const months = ['jan', 'march', 'april', 'june'];
+months.splice(1, 0, 'feb');
+// Inserts at index 1
+// console.log(months);
+// // Expected output: Array[ 'jan', 'feb', 'march', 'april', 'june' ]
+
+// months.splice(4, 1, 'may');
+// // Replaces 1 element at index 4
+// console.log(months);
+// // Expecte output: Array[ 'jan', 'feb', 'march', 'april', 'may' ]
+
+// ---------------------------------------------------------------
+
