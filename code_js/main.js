@@ -126,4 +126,13 @@ let instructor = {
 // console.log(Object.keys(instructor));
 // console.log(Object.entries(instructor));
 // console.log(instructor.hasOwnProperty("firstName"));
-console.log(Object.values(instructor));
+// console.log(Object.values(instructor));
+
+
+//----------------------------------------------------------
+
+// Arays
+
+let names = ["Dheeraj", "Niraj", "Saurabh"];
+
+let values = [true, {}, [], 2, "awesome"];
