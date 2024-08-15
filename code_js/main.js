@@ -76,7 +76,7 @@ function logAtLeast5(n){
   }
 }
 
-console.log(100)
+// console.log(100)
 
 function logAtMost5(n){
   for(var i = 1; i <= Math.min(5, n); i++){
@@ -84,6 +84,26 @@ function logAtMost5(n){
   }
 }
 
-console.log(10);
+// console.log(10);
 
 
+function sum(arr){
+  let total = 0;
+
+  for(let i = 0; i < arr.length; i++){
+    total += arr[i];
+  }
+  return total;
+
+}
+// console.log(sum([1, 2, 3, 4, 5])); 
+
+
+function double(arr){
+  let newArr = [];
+  for(let i = 0; i < arr.length; i++){
+    newArr.push(arr[i] * 2);
+  }
+  return newArr;
+}
+console.log(double([1,2,3,4]));
