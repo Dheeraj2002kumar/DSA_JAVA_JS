@@ -106,4 +106,24 @@ function double(arr){
   }
   return newArr;
 }
-console.log(double([1,2,3,4]));
+// console.log(double([1,2,3,4]));
+
+
+//------------------------------------------------------------
+
+// Objects
+
+let instructor = {
+  firstName: "Dheeraj",
+  isInstructor: true,
+  favoriteNumbers: [1,2,3,4]
+}
+// console.log(instructor);
+// console.log(instructor.firstName);
+// console.log(instructor.isInstructor);
+// console.log(instructor.favoriteNumbers);
+
+// console.log(Object.keys(instructor));
+// console.log(Object.entries(instructor));
+// console.log(instructor.hasOwnProperty("firstName"));
+console.log(Object.values(instructor));
